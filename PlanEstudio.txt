@@ -1,0 +1,298 @@
+// =======================================
+// JAVA 17 BACKEND
+// Objetivo: actualizarse y consolidar conocimientos
+// =======================================
+
+// =====================
+// SEMANA 1: FUNDAMENTOS JAVA + VARIABLES
+// =====================
+Día 1:
+  Variables primitivas y wrappers (int, Integer, double, Double, boolean, Boolean, char, String)
+           Declaración, inicialización, reasignación
+           Casting y conversiones
+           Operadores aritméticos, lógicos y de comparación
+           Diferencias entre tipos primitivos y objetos (wrapper, String)
+  Mini ejercicios: crear variables, concatenaciones, prints
+
+Día 2:
+  Arrays: creación, lectura, modificación, recorrer con for y for-each
+           Arrays multidimensionales
+  Mini ejercicio: suma de elementos de un array, promedio, búsqueda
+
+Día 3:
+  Collections básicas: List, Set, Map
+           Añadir, eliminar, modificar y recorrer
+           Diferencias entre ArrayList, LinkedList, HashSet, TreeSet, HashMap
+  Mini ejercicio: crear lista de objetos, filtrar y mostrar
+
+Día 4:
+  Práctica integradora semana 1 (variables, arrays, collections)
+           Mini proyectos y ejercicios combinados (9:30–14:00 bloque único)
+
+// =====================
+// SEMANA 2: POO BÁSICA
+// =====================
+
+Día 5:
+  Clases y objetos, atributos y métodos
+           Constructores y `this`
+           Diferencias entre `var` y tipos explícitos (Java 17)
+  Mini ejercicio: clase Persona con nombre y edad
+
+Día 6:
+  Encapsulación (private, public, protected)
+           Getters y setters
+           Modificadores finales y constantes (`final`)
+  Mini ejercicio: control de acceso a atributos de Persona
+
+Día 7:
+  Herencia y abstracción (abstract classes)
+           Polimorfismo básico
+           Uso de `super` y `@Override`
+  Mini ejercicio: clase Animal y subclases Perro/Gato
+
+Día 8:
+  Interfaces, métodos default, estáticos, instanceOf y toString
+           Implementación y uso en objetos
+           Introducción a `record` (Java 16/17) para clases inmutables simples
+
+Día 9:
+  Práctica integradora semana 2 (POO completa: clases, herencia, interfaces, encapsulación)
+
+// =====================
+// SEMANA 3: EXCEPCIONES Y REPASO POO
+// =====================
+
+Día 10:
+  Manejo de excepciones (`try-catch`, `finally`, `throws`)
+           Excepciones checked y unchecked
+  Ejercicio: captura de división por cero
+
+Día 11:
+  Repaso fundamentos + mini proyecto combinando variables, arrays y POO
+
+Día 12:
+  Collections avanzada, Streams y operaciones de filtrado/map/reduce
+           Introducción a `var` con Streams
+  Mini proyecto: lista de objetos con filtrado y mapeo
+
+Día 13:
+  Conceptos de memoria y referencias en Java
+           Stack vs Heap
+           Inmutabilidad y punteros a objetos
+
+Día 14:
+  Práctica integradora semana 3 (POO avanzada + Streams + memoria)
+
+// =====================
+// SEMANA 4: SPRING BOOT BÁSICO + STREAMS
+// =====================
+
+Día 15:
+  Crear proyecto Spring Boot, estructura MVC (Controller, Service, Repository)
+  Streams básicos:
+         - filter
+         - map
+         - reduce
+         - sort
+         - count
+         - mini problemas (productos, totales, categorías)
+
+Día 16:
+  CRUD básico (Endpoints, PathParams, QueryParams, Body)
+  Streams aplicados:
+         - filter (precios > X)
+         - map (transformaciones)
+         - mapToDouble / mapToInt
+         - sum, count, sorted
+         - reduce (uso básico)
+         - ejercicios reales con productos
+
+Día 17:
+  DTOs + validaciones
+  @ControllerAdvice + manejo de errores
+         - entity → DTO con map
+         - endpoints con transformación de datos
+
+Día 18:
+  Repaso Spring + Streams
+  logging
+         - simulación error + rollback
+         - logs en endpoints
+
+Día 19:
+  Práctica integradora semana 4
+  Mini proyecto:
+         - CRUD + DTOs + errores + Streams + logs
+
+// =====================
+// SEMANA 5: BBDD + JPA + TESTING
+// =====================
+
+Día 20:
+  BBDD (H2/SQLite) + conexión Spring Boot
+  JPA básico:
+         - guardar y leer entidades
+         - groupingBy, count, max/min con Streams
+         - @Transactional
+  Lombok (Data, Builder, Constructor)
+
+Día 21:
+  Relaciones (1:N, N:M)
+  Ejercicios con relaciones:
+         - pedidos → productos
+         - sumas con Streams
+         - DTOs desde relaciones
+
+Día 22:
+  Streams + lógica:
+         - strings (length, trim, validación, isEmpty)
+         - listas (filter, map, sorted)
+         - reduce (sumas básicas)
+         - mini retos combinando Streams
+
+  JWT básico (CONCEPTO + FLUJO)
+         - qué es un token y para qué sirve
+         - login → genera token → request con Authorization Bearer
+         - estructura JWT (header/payload/signature)
+         - validación básica del token en backend
+         - entender el flujo completo sin Spring Security
+
+  JWT + SEGURIDAD (SIGUIENTE PASO)
+         - introducir Spring Security en el proyecto
+         - crear JwtFilter (interceptar y validar requests)
+         - configurar SecurityConfig (reglas de acceso)
+         - proteger endpoints (/books, /authors)
+         - añadir roles (USER / ADMIN)
+         - validar token en cada request (expiración + firma)
+         - pruebas en Postman (sin token / con token / con permisos)
+
+Día 23:
+  Testing con JUnit
+  Mockito:
+         - mocks
+         - tests de servicios
+         - verify
+
+Día 24:(Viernes)
+  Práctica integradora semana 5
+  Proyecto:
+         - CRUD + BBDD + relaciones (JPA) + DTOs + tests + Streams + JWT
+
+=====================
+SEMANA 6: BASE REAL + ARQUITECTURA
+=====================
+
+Día 25 - PRACTICA INTEGRADORA (DÍA 1-5)
+  API completa (CRUD + BBDD + DTOs)
+  Streams en lógica real
+  Base JWT (login + token básico)
+
+Día 26 - PRACTICA INTEGRADORA (DÍA 2-5)
+  Continuación API
+  Endpoints completos + lógica
+  Preparación para seguridad
+
+Día 27 - PRACTICA INTEGRADORA (DÍA 3-5)
+  JWT + tests
+         - login endpoint
+         - generar token
+         - validar token
+         - test Service
+         - test Controller
+
+Día 28 - PRACTICA INTEGRADORA (DÍA 4-5)
+  Microservicios (IMPORTANTE)
+         - conceptos
+         - separar user-service / order-service
+         - comunicación REST entre servicios
+         - combinar datos
+
+Día 29 - PRACTICA INTEGRADORA (DÍA 5-5)
+  Docker
+  Dockerizar Spring Boot:
+         - Dockerfile
+         - run container
+         - pruebas API
+
+=====================
+SEMANA 7: REFUERZO + ENTREVISTAS
+=====================
+
+Día 30:
+  Algoritmos (IMPORTANTE ENTREVISTAS)
+         - arrays
+         - strings
+         - listas
+         - Streams combinados
+
+Día 31:
+  SOLID + buenas prácticas
+  Refactor código + Streams + lógica medium
+
+Día 32:
+  Simulación entrevista técnica
+  JWT + seguridad en preguntas típicas
+  Streams + lógica + refactor
+
+Día 33:
+  Patrones (Singleton, Factory)
+  POO + ejercicios prácticos
+
+Día 34:
+  Práctica integradora semana 7
+  Proyecto con:
+         - buenas prácticas
+         - Streams
+         - errores
+         - JWT aplicado
+         - lógica real
+
+=====================
+SEMANA 8: PROYECTO FINAL + ENTREVISTA
+=====================
+
+Día 35:
+  Proyecto final (DÍA 1-3)
+         - setup proyecto
+         - entidades + DTOs
+         - repositorios
+         - services
+         - lógica negocio
+         - Streams en endpoints
+         - endpoints funcionales
+
+Día 36:
+  Proyecto final (DÍA 2-3)
+         - consolidar lógica
+         - mejorar endpoints
+         - preparar base para seguridad
+
+Día 37:
+  Proyecto final (DÍA 3-3)
+         - JWT + seguridad
+         - roles (USER / ADMIN)
+         - protección endpoints
+         - manejo de errores
+         - tests básicos (service + controller)
+
+Día 38:
+  Kafka / RabbitMQ (BÁSICO)
+         - qué es mensajería
+         - producer / consumer
+         - ejemplo simple (evento de pedido)
+
+Día 39:
+  Simulación entrevista completa
+         - explicar proyecto end-to-end
+         - JWT + microservicios + Streams
+         - preguntas técnicas típicas
+         - debugging en directo
+
+// =====================
+// NOTAS IMPORTANTES
+// =====================
+// - Viernes = práctica integradora SIEMPRE
+// - Streams es prioridad (filter, map, sum, count)
+// - Backend real = datos + lógica, no teoría
+// - Objetivo = poder trabajar en APIs reales
