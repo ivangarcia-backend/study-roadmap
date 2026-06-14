@@ -91,9 +91,8 @@ Incluye desde fundamentos de Java hasta desarrollo de APIs REST con Spring Boot,
 
 ## 📫 Autor
 
-- Email: ivanraso02@gmail.com
-- GitHub: ivangarcia-backend
-- LinkedIn: Iván García Raso
+- 🔗 GitHub: [ivangarcia-backend](https://github.com/IvanDataProjects)  
+- 🔗 LinkedIn: [Iván García Raso](https://www.linkedin.com/in/ivan-garcia-raso)
 
 ---
 
